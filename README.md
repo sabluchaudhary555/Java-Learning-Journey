@@ -9,7 +9,6 @@ Welcome to my structured Java learning repository.
 
 ## 📂 Learning Roadmap (Topic-wise)
 ### 🟢 Phase 1: [p1basics](./src/p1basics)
-**Focus**: Java Fundamentals and Data Types.
 * **Introduction:** Introduction & History of Java. JVM vs JRE vs JDK.
 * **Syntax:** Data Types,Type Conversion, Variables, Identifiers, Keywords and Scanner Methods.
     * 📂 Mini Project: [CurrencyConverter](./src/p1basics/datatypes/CurrencyConverter.java)
