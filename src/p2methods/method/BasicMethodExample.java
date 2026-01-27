@@ -1,6 +1,6 @@
 package p2methods.method;
 
-public class BasicMethod {
+public class BasicMethodExample {
 
 
     // 1. SIMPLE VOID METHOD

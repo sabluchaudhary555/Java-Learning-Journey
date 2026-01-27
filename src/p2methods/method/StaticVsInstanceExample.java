@@ -1,6 +1,6 @@
 package p2methods.method;
 
-public class StaticVsInstance {
+public class StaticVsInstanceExample {
 
     // INSTANCE VARIABLE - different for each object
     String studentName;
@@ -11,7 +11,7 @@ public class StaticVsInstance {
     static int totalStudents = 0;
 
     // CONSTRUCTOR
-    public StaticVsInstance(String name, int roll) {
+    public StaticVsInstanceExample(String name, int roll) {
         this.studentName = name;
         this.rollNumber = roll;
         totalStudents++; // Increment static counter
@@ -42,18 +42,18 @@ public class StaticVsInstance {
     }
 
     // 5. STATIC METHOD FOR OBJECT CREATION (Factory Method)
-    public static StaticVsInstance createStudent(String name, int roll) {
-        return new StaticVsInstance(name, roll);
+    public static StaticVsInstanceExample createStudent(String name, int roll) {
+        return new StaticVsInstanceExample(name, roll);
     }
 
     public static void main(String[] args) {
         // Using static methods WITHOUT object
-        StaticVsInstance.displaySchoolInfo();
-        System.out.println("Is valid email? " + StaticVsInstance.isValidEmail("test@email.com"));
+        StaticVsInstanceExample.displaySchoolInfo();
+        System.out.println("Is valid email? " + StaticVsInstanceExample.isValidEmail("test@email.com"));
 
         // Creating objects for instance methods
-        StaticVsInstance student1 = new StaticVsInstance("Alice", 101);
-        StaticVsInstance student2 = StaticVsInstance.createStudent("Bob", 102);
+        StaticVsInstanceExample student1 = new StaticVsInstanceExample("Alice", 101);
+        StaticVsInstanceExample student2 = StaticVsInstanceExample.createStudent("Bob", 102);
 
         // Using instance methods
         student1.displayStudentInfo();
@@ -62,6 +62,6 @@ public class StaticVsInstance {
         student2.displayStudentInfo();
 
         // Static method shows updated count
-        StaticVsInstance.displaySchoolInfo();
+        StaticVsInstanceExample.displaySchoolInfo();
     }
 }

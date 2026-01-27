@@ -1,6 +1,6 @@
 package p2methods.method;
 
-public class CommandLineArgs {
+public class CommandLineArgsExample {
 
     // 1. BASIC ARGUMENTS DISPLAY
     public static void main(String[] args) {
